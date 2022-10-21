@@ -25,8 +25,6 @@
 
 ## Technologies Used (TÄIENDAME JOOKSVALT)
 -  Node.js 18.0.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
 
 
 ## Features (TÄIENDAME - OSTUKORV JMS)
@@ -50,7 +48,6 @@ npx create-react-app my-app --template typescript
 To run this project, install it locally using npm:
 
 ```
-$ cd ../lorem
 $ npm install
 $ npm start
 ```
@@ -66,7 +63,7 @@ Provide various use cases and code examples here.
 Project is: _in progress_ 
 
 
-## Room for Improvement (LAHTINE HETKEL)
+## Room for Improvement (IN PROGRESS)
 Include areas you believe need improvement / could be improved. Also add TODOs for future development.
 
 Room for improvement:
@@ -79,7 +76,6 @@ To do:
 
 
 ## Acknowledgements
-Give credit here.
 - This project was inspired by climate crisis. Melior means creating better in Latin - so our mission is to create world better place to live!
 - This project was based on Vali IT demands.
 - Many thanks to all our friends.

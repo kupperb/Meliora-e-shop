@@ -1,4 +1,4 @@
-# Melior-e-shop
+# Meliora-e-shop
 > Shoeshop website. Users can buy shoes and add them to basket.
 
 ## Table of Contents

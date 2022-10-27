@@ -7,7 +7,6 @@
 - [General Info](#general-information)
 - [Technologies Used](#technologies-used)
 - [Features](#features)
-- [Screenshots](#screenshots)
 - [Setup](#setup)
 - [Usage](#usage)
 - [Project Status](#project-status)
@@ -36,11 +35,6 @@ List the ready features here:
 - Awesome feature 2
 - Awesome feature 3
 
-## Screenshots (VÕIME LISADA)
-
-![Example screenshot](./img/screenshot.png)
-
-<!-- If you have screenshots you'd like to share, include them here. -->
 
 ## Setup (
 
@@ -54,6 +48,17 @@ To run this project, install it locally using npm:
 $ npm install
 $ npm start
 ```
+Install JSS
+$ npm i react-jss@10.5.1
+```
+Install React-Router
+$ npm add react-router-dom
+```
+Install font
+$ npm install @fontsource/montserrat
+And add this import to file index.tsx
+import "@fontsource/montserrat";
+
 
 ## Usage
 

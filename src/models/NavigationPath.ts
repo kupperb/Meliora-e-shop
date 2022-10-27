@@ -1,6 +1,8 @@
 import LandingPage from "../pages/LandingPage";
 import Dashboard from "../pages/Dashboard";
 import AboutUsPage from "../pages/AboutUsPage";
+import LoginPage from "../pages/LoginPage";
+
 
 type NavType = {
     name: string;
@@ -16,14 +18,20 @@ const NavigationPath: NavType[] = [
     },
     {
       name: "SHOP",
-      path: "/shop",
+      path: "/dashboard",
       component: Dashboard,
     },
     {
-      name: "ABOUT US",
-      path: "/aboutus",
+      name: "ABOUT",
+      path: "/about",
       component: AboutUsPage,
     },
+    {
+      name: "SignInUp",
+      path: "/sign",
+      component: LoginPage,
+    },
+    
 ];
   
 export default NavigationPath;

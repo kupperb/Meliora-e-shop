@@ -1,9 +1,13 @@
 const theme = {
     colors: {
         white: "#ffffff",
-        sandBackground: "#EAEBE7e",
+        backgroundColor: "#EAEBE7e",
         black: "#000000",
-        melioraGreen: "203834",
+        beige: '#E4DFD9',
+    },
+    font: {
+      main: 'Montserrat',
+      size: 25,
     },
     spacing: {
       xxs: 2,
@@ -11,7 +15,7 @@ const theme = {
       s: 8,
       m: 16,
       l: 24,
-      xl: 32,
+      xl: 48,
     },
     transition: {
       hover: "background .2s ease-in-out, border .2s ease-in-out",

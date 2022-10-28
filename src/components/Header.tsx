@@ -16,22 +16,24 @@ const useStyles = createUseStyles({
 		zIndex: "-1",
 	},
 	logo: {
-		height: 150,
+		height: 90,
 		display: "flex",
 		position: "relative",
 		zIndex: "1",
 		alignSelf: "center",
+		justifyContent: "center",
 		margin: "auto",
-		padding: 20,
+		paddingTop: 77,
 	},
 	brandText: {
-		height: 30,
+		height: 25,
 		display: "flex",
 		position: "relative",
 		zIndex: "1",
 		alignSelf: "center",
+		justifyContent: "center",
 		margin: "auto",
-		paddingTop: 5,
+		paddingBottom: 95,
 	},
 });
 

@@ -1,13 +1,13 @@
 const theme = {
     colors: {
         white: "#ffffff",
-        backgroundColor: "#EAEBE7e",
+        backgroundColor: "#EAEBE7",
         black: "#000000",
         beige: '#E4DFD9',
     },
     font: {
       main: 'Montserrat',
-      size: 25,
+      size: 20,
     },
     spacing: {
       xxs: 2,

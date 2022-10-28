@@ -40,8 +40,6 @@ List the ready features here:
 
 Install Node.js https://nodejs.org/en/
 
-npx create-react-app my-app --template typescript
-
 To run this project, install it locally using npm:
 
 ```

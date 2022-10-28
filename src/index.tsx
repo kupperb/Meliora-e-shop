@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
 import NavigationPath from './models/NavigationPath';
 import "@fontsource/montserrat";
-import Categories from './components/Categories';
+import LayotHelper from './components/LayotHelper';
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -12,11 +12,10 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Navbar />
-      <Categories />
       <Routes>
+        
         {NavigationPath.map((el) => (
-          <Route path={el.path} element={<el.component />} key={el.path} />
+          <Route path={el.path} element={<LayotHelper hasLogo={el.hasLogo}><el.component /></LayotHelper>} key={el.path} />
         ))}
       </Routes>
     </BrowserRouter>

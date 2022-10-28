@@ -23,7 +23,7 @@ const useStyles = createUseStyles({
 		alignSelf: "center",
 		justifyContent: "center",
 		margin: "auto",
-		paddingTop: 78,
+		paddingTop: 77,
 	},
 	brandText: {
 		height: 25,

@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
+import Navbar from "../components/Navbar";
+import Login from "../components/Login";
+import Signup from "../components/Signup";
 
-const LoginPage: React.FC = () => {
-    return <div>This is Login Page</div>;
-};
+function LoginPage() {
+  const [currentForm, setCurrentForm] = useState('login');
+
+  const toggleForm = (formName: React.SetStateAction<string>) => {
+    setCurrentForm(formName);
+  }
+
+  
+    return (
+      <div className="Login">
+        {
+          currentForm === "login" ? <Login onFormSwitch={toggleForm} /> : <Signup onFormSwitch={toggleForm} />
+        }
+      </div>
+    );
+  }
 
 export default LoginPage;

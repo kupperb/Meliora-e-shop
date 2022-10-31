@@ -6,7 +6,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 const useStyles = createUseStyles({
     container: {
-        height: 550,
+        height: 700,
         width: '100%',
         display: 'flex',
     },
@@ -32,12 +32,11 @@ const useStyles = createUseStyles({
     },
 
     landingButton: {
-        height: 70,
-        width: 241,
+        height: 68,
+        width: 230,
         backgroundColor: theme.colors.white,
-        fontSize: 25,
+        fontSize: theme.font.size,
         border: [1, 'solid', theme.colors.black],
-        fontFamily: 'Montserrat',
         fontWeight: 100,
         cursor: 'pointer',
     },

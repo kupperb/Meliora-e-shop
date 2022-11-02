@@ -33,32 +33,7 @@ const Main = () => {
       price: 29,
       size: 36,
       imageUrl: "http://localhost:8000/images/shoe-01.jpg",
-    },
-    {
-      id: "2",
-      name: "Hall Suss",
-      description: "Lorem Ipsum Parim Suss: üks suurus sobib kõigile!",
-      price: 29,
-      size: 36,
-      imageUrl: "http://localhost:8000/images/shoe-01.jpg",
-    },
-    {
-      id: "3",
-      name: "Hall Suss",
-      description: "Lorem Ipsum Parim Suss: üks suurus sobib kõigile!",
-      price: 29,
-      size: 36,
-      imageUrl: "http://localhost:8000/images/shoe-01.jpg",
-    },
-    {
-      id: "4",
-      name: "Hall Suss",
-      description: "Lorem Ipsum Parim Suss: üks suurus sobib kõigile!",
-      price: 29,
-      size: 36,
-      imageUrl: "http://localhost:8000/images/shoe-01.jpg",
-    },
-  ];
+    },]
 
   return (
     <main className={`${classes.block} ${classes.col2}`}>

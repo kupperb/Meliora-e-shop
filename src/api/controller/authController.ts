@@ -9,7 +9,6 @@ export async function registerUser(user:any): Promise<any> {
         body: JSON.stringify(user),
         headers: {
             'Content-Type': 'application/json',
-            //'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6I…A1OX0.yErkej6Trcn6TZ5y8Ybp0c4I9PIZOHr02yFDr-5Le2w'
         },
     });
     if (response.status === 200) {
@@ -41,5 +40,25 @@ export async function getCurrentUser(): Promise<any> {
         }
     } return {
         isSuccess: false,
-    }
-}
+    };
+};
+
+export async function loginUser(user:any): Promise<any> {
+    const response = await fetch(getPath(ApiPath.Auth.login), {
+        method: 'POST',
+        body: JSON.stringify(user),
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    });
+    if (response.status === 200) {
+        const data = await response.json();
+
+        return {
+            body: data,
+            isSuccess: true,
+        }
+    } return {
+        isSuccess: false,
+    };
+};

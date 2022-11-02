@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { createUseStyles } from 'react-jss';
 import theme from "../common/theme";
 import { registerUser } from "../api/controller/authController";
@@ -37,14 +37,12 @@ export const RegisterForm = (props: {
         const response = await registerUser(newUser);
         if (response.isSuccess === true) {
             const {accessToken} = response.body;
-            if(accessToken) {
+            if (accessToken) {
                 setAuthToken(accessToken);
                 navigate('/dashboard');
             }
-
         }
     };
-
     return (
         <div className={classes.authFormContainer}>
             <h2>Sign up</h2>

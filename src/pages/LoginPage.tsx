@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import Navbar from "../components/Navbar";
-import Login from "../components/Login";
+import Login from "../components/LoginForm";
 import { RegisterForm }  from "../components/RegisterForm";
 
 function LoginPage() {
@@ -9,11 +8,6 @@ function LoginPage() {
   const toggleForm = (formName: React.SetStateAction<string>) => {
     setCurrentForm(formName);
   };
-
-  /*var h1Element = document.querySelector('body');
-
- h1Element.style.color = 'blue';*/
-
 
     return (
       <div>

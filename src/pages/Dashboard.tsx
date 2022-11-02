@@ -16,16 +16,6 @@ const useStyles = createUseStyles({
   page: {
     display: "flex",
   },
-  sidepanel: {
-    display: "flex",
-    flexDirection: "column",
-    position: "fixed",
-    width: 300,
-    height: "100vh",
-    opacity: 0.8,
-    paddingTop: 90,
-    marginTop: 80,
-  },
   userInfo: {
     color: "white",
     padding: 20,
@@ -39,26 +29,11 @@ const useStyles = createUseStyles({
     opacity: 0.8,
     marginTop: 80,
   },
-  toShop: {
-    display: "flex",
-    alignSelf: "flex-end",
-    marginBottom: 200,
-    marginleft: 700,
-    paddingTop: 30,
-    color: theme.colors.white,
-    textDecoration: "none",
-  },
-  recommendedBox: {
-    display: "flex",
-    width: 990,
-    paddingTop: 30,
-    justifyContent: "space-between",
-  },
 });
 
 const Dashboard: React.FC = () => {
   const classes = useStyles();
-  const [currentUser, setCurrentUser] = useState<AuthUser| null>(null);
+  const [currentUser, setCurrentUser] = useState<AuthUser | null>(null);
 
   useEffectAsync (async() => {
     const response = await getCurrentUser()
@@ -84,17 +59,13 @@ const Dashboard: React.FC = () => {
     <div className={classes.background}>
       <div>
         <div className={classes.page}>
-          <div className={classes.sidepanel}></div>
-
           <div className={classes.productArea}>
             <div>
-              Tere tulemast
+              Welcome
               {` ${currentUser?.firstName} ${currentUser?.lastName}!`}
             </div>
-            Soovitame sulle...
-            <div className={classes.recommendedBox}>
+              We wish you AAAALL the BEST!  Remember, YOU CAN DO IT!
             </div>
-          </div>
         </div>
       </div>
     </div>

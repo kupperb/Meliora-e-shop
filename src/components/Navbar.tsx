@@ -43,7 +43,7 @@ type NavbarProps = {
     hasLogo: boolean,
 }
 
-const Navbar: React.FC<NavbarProps>= ({hasLogo}) => {
+const Navbar: React.FC<NavbarProps> = ({hasLogo}) => {
     const classes = useStyles();
     
     return (
@@ -54,9 +54,6 @@ const Navbar: React.FC<NavbarProps>= ({hasLogo}) => {
                 </Link>
                 <Link to='/dashboard' className={classes.words}>
                     SHOP
-                </Link>
-                <Link to='/about' className={classes.words}>
-                    ABOUT
                 </Link>
             </div>
             <div>{hasLogo ? "logo" : ""}</div>

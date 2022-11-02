@@ -56,14 +56,11 @@ Install font
 $ npm install @fontsource/montserrat
 And add this import to file index.tsx
 import "@fontsource/montserrat";
+--------
+Install React Hook Form
+$ npm install react-hook-form
 
 
-## Usage
-
-How does one go about using it?
-Provide various use cases and code examples here.
-
-`write-your-code-here`
 
 ## Project Status
 

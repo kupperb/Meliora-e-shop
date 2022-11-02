@@ -1,6 +1,6 @@
 import React from "react";
 import { createUseStyles } from 'react-jss';
-import theme from "../common/theme";
+import theme from "../../common/theme";
 import { useNavigate } from "react-router-dom";
 
 

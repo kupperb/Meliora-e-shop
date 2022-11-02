@@ -19,7 +19,7 @@ const NavigationPath: NavType[] = [
       hasLogo: false,
     },
     {
-      name: "SHOP",
+      name: "Dashboard",
       path: "/dashboard",
       component: Dashboard,
       hasLogo: true,
